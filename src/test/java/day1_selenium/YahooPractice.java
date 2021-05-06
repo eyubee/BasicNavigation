@@ -20,7 +20,16 @@ public class YahooPractice {
          /** 3. Verifytitle:
          Expected: Yahoo */
          String expectedTitle= "Yahoo";
-
+        System.out.println("expected title= "+expectedTitle);
+//actual title
+        String actualTiltle=driver.getTitle();
+        System.out.println("actualTiltle = " + actualTiltle);
+        if(expectedTitle.equals(actualTiltle)){
+            System.out.println("title is as expected. verification PASSED");
+        }else{
+            System.out.println("not expected title. verfication FAILED");
+        }
+        driver.close();
 
     }
 }
