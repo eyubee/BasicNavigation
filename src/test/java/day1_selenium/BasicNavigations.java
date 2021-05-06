@@ -45,6 +45,9 @@ public class BasicNavigations {
         /** maximizing page size*/
         driver.manage().window().maximize();
 
+        //this method will close all currentlly focused page or tab
+        driver.close();
+
 
 
 
